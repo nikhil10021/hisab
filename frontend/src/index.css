@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    min-width: 20rem;
+    min-height: 100vh;
+    margin: 0;
+    background-image: radial-gradient(
+      ellipse at top,
+      var(--color-surface-raised),
+      transparent 55%
+    );
+  }
+}

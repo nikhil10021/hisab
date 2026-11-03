@@ -1,3 +1,4 @@
+/* Placeholder palette; founder to finalize. */
 @theme {
   --color-background: #090c12;
   --color-surface: #111722;
@@ -5,13 +6,14 @@
   --color-line: #283344;
   --color-foreground: #edf2f8;
   --color-muted: #9aa8ba;
-  --color-accent: #66f2ce;
-  --color-accent-soft: #15362f;
+  --color-accent-primary: #66f2ce;
+  --color-accent-primary-soft: #15362f;
+  --color-accent-secondary: #b6a4ff;
   --color-danger: #ff9aa8;
   --color-danger-soft: #3a2029;
 
-  --font-sans: "Inter", "Segoe UI", sans-serif;
-  --font-mono: "Cascadia Code", monospace;
+  --font-sans: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'Cascadia Code', monospace;
 
   --spacing: 0.25rem;
   --text-xs: 0.75rem;

@@ -1,0 +1,31 @@
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["pydantic.mypy"]
+files = [
+    "app/main.py",
+    "app/api/v1",
+    "app/core/base.py",
+    "app/core/errors.py",
+    "app/core/fields.py",
+    "app/core/money.py",
+    "app/core/registry.py",
+    "app/core/result.py",
+    "app/core/settings.py",
+    "tests/api",
+    "tests/test_api.py",
+    "tests/unit/dummy_calculator.py",
+    "tests/unit/test_core.py",
+    "tests/unit/test_registry.py",
+]
